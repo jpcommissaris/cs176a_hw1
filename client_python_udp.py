@@ -129,7 +129,7 @@ def __sendACK(sock, addr):
         raise CannotRecieveInstructions()
 
 def __writeToFile(data):
-    filename = 'f_' + time.strftime("%Y%m%d-%H%M%S") + '.txt'
+    filename = 'fc_' + time.strftime("%Y%m%d-%H%M%S") + '.txt'
     if os.path.exists(filename):
         f = open(filename, "a")
     else:

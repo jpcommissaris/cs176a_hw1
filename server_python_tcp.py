@@ -1,4 +1,4 @@
-import socket, sys, os, _thread
+import socket, sys, os, _thread, time
 
 # resources:
 # https://pymotw.com/2/socket/tcp.html
@@ -62,8 +62,11 @@ def __handleCommand(command):
         output = os.popen(command).read()
         if '>>' in command or '>' in command:
             output = __getPipeOutput(command)
+        else:
+            __writeToFile(output)
         return output 
     except Exception as e:
+        print(e)
         raise CannotWriteFile(e)
 
 def __getPipeOutput(command):
@@ -74,6 +77,15 @@ def __getPipeOutput(command):
         output = f.read()
         f.close() 
         return output
+
+def __writeToFile(data):
+    filename = 'fs_' + time.strftime("%Y%m%d-%H%M%S") + '.txt'
+    if os.path.exists(filename):
+        f = open(filename, "a")
+    else:
+        f = open(filename, "w")
+    f.write(data)
+    f.close() 
 
 def __sendResponse(connection, res): 
     try: 
