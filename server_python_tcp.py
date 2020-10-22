@@ -1,9 +1,12 @@
 import socket, sys, os, _thread, time
 
 # resources:
+# https://docs.python.org/3/
 # https://pymotw.com/2/socket/tcp.html
+# https://wiki.python.org/moin/TcpCommunication
 # https://janakiev.com/blog/python-shell-commands/
 # https://stackoverflow.com/questions/10810249/python-socket-multiple-clients
+# https://stackoverflow.com/questions/10607688/how-to-create-a-file-name-with-the-current-date-time-in-python
 
 class CannotRecieveInstructions(Exception):
     pass

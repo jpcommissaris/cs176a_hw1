@@ -1,6 +1,7 @@
 import socket, select, sys, os, time
 
 # resources:
+# https://docs.python.org/3/
 # https://pymotw.com/2/socket/tcp.html
 # https://wiki.python.org/moin/TcpCommunication
 # https://stackoverflow.com/questions/1708835/python-socket-receive-incoming-packets-always-have-a-different-size#:~:text=The%20answer%20is%3A%20you%20don,network%20byte%20order%20using%20socket.
