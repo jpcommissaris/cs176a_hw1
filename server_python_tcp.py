@@ -2,6 +2,7 @@ import socket, sys, os, _thread, time
 
 # resources:
 # https://docs.python.org/3/
+# https://docs.python.org/3/library/socket.html
 # https://pymotw.com/2/socket/tcp.html
 # https://wiki.python.org/moin/TcpCommunication
 # https://janakiev.com/blog/python-shell-commands/

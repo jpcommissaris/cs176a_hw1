@@ -2,6 +2,7 @@ import socket, sys, os, _thread, time
 
 # resources:
 # https://docs.python.org/3/
+# https://docs.python.org/3/library/socket.html
 # https://janakiev.com/blog/python-shell-commands/
 # https://wiki.python.org/moin/UdpCommunication
 # https://stackoverflow.com/questions/10607688/how-to-create-a-file-name-with-the-current-date-time-in-python
